@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/inSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/dollar_sign"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inCode"
+        app:layout_constraintEnd_toEndOf="@+id/inCode" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="412dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="73dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/output"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/interchange" />
+
+    <TextView
+        android:id="@+id/inCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/dollar_code"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/inCode"
+        app:layout_constraintEnd_toStartOf="@+id/inCode"
+        app:layout_constraintStart_toStartOf="@+id/interchange"
+        app:layout_constraintTop_toTopOf="@+id/inSign"
+        tools:text="0.00" />
+
+    <TextView
+        android:id="@+id/outSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="@string/native_sign"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/outCode"
+        app:layout_constraintEnd_toEndOf="@+id/outCode" />
+
+    <TextView
+        android:id="@+id/outCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:text="@string/native_code"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="210dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/converted"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/errorMsg"
+        app:layout_constraintStart_toStartOf="@+id/interchange"
+        app:layout_constraintTop_toBottomOf="@+id/interchange" />
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/rate_download_positive"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/interchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="261dp"
+        android:text="↑↓"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rateMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/current_rate"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/currentRate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currentRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="@string/dollar_to_native"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/rateMessage"
+        app:layout_constraintTop_toBottomOf="@+id/outCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

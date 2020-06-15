@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dollar_full">United States Dollar</string>
+    <string name="ruble_full">Russian Federation Ruble</string>
+    <string name="euro_full">Euro</string>
+    <string name="shekel_full">New Israeli
+
+        Shekel</string>
+    <string name="pound_full">Great Britain Pound Sterling</string>
+    <string name="ir_rial_full">Iranian Rial</string>
+    <string name="sw_franc_full">Swiss Franc</string>
+    <string name="can_dollar_full">Canadian Dollar</string>
+</resources>

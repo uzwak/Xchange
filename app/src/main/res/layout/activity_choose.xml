@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/choose"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/toFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="17dp"
+        android:nestedScrollingEnabled="true"
+        android:showDividers="middle|beginning|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageFinale">
+
+        <TableRow
+            android:id="@+id/EURO"
+            android:layout_width="109dp"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/ic_flag_eu_foreground"
+                android:fontFamily="monospace"
+                android:text="@string/euro_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/euro_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/euro_full"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/DOLLAR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:background="@mipmap/ic_flag_usa_foreground"
+                android:fontFamily="sans-serif-black"
+                android:paddingRight="15dp"
+                android:text="@string/dollar_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:paddingRight="15dp"
+                android:text="@string/dollar_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/dollar_full"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RUBLE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@mipmap/ic_flag_rus_foreground"
+                android:fontFamily="sans-serif-black"
+                android:paddingRight="15dp"
+                android:text="@string/ruble_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:paddingRight="15dp"
+                android:text="@string/ruble_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/ruble_full"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/POUND"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@mipmap/ic_flag_uk_foreground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/pound_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/pound_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:drawableTint="#330202"
+                android:lines="5"
+                android:text="@string/pound_full"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/SHEKEL"
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@mipmap/ic_flag_israel_foreground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/shekel_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/shekel_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="243dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:maxLines="10"
+                android:text="@string/shekel_full"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CAN_DOLLAR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/ic_flag_canada_foreground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/can_dollar_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/can_dollar_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/can_dollar_full"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/SWISS_FRANC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/ic_flag_switzerland_foreground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/sw_franc_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/sw_franc_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/sw_franc_full"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/IR_RIAL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@mipmap/ic_flag_iran_foreground"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/ir_rial_code"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/ir_rial_sign"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#751515"
+                android:text="@string/ir_rial_full"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/toFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/choose_in"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/messageFinale"
+        app:layout_constraintStart_toStartOf="@+id/message"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/messageFinale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/loc_msg_choose"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toFrom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

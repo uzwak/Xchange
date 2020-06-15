@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="native_code">USD</string>
+
+    <string name="dollar_code" translatable="false">USD</string>
+    <string name="ruble_code" translatable="false">RUR</string>
+    <string name="euro_code" translatable="false">EUR</string>
+    <string name="shekel_code" translatable="false">ILS</string>
+    <string name="pound_code" translatable="false">GBP</string>
+    <string name="ir_rial_code" translatable="false">IRR</string>
+    <string name="can_dollar_code" translatable="false">CAD</string>
+    <string name="sw_franc_code" translatable="false">CHF</string>
+</resources>

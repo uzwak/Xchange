@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="native_sign">$</string>
+
+    <string name="dollar_sign" translatable="false">$</string>
+    <string name="ruble_sign" translatable="false">₽</string>
+    <string name="euro_sign" translatable="false">€</string>
+    <string name="shekel_sign" translatable="false">₪</string>
+    <string name="pound_sign" translatable="false">£</string>
+    <string name="ir_rial_sign" translatable="false">.ر.ا</string>
+    <string name="can_dollar_sign" translatable="false">$</string>
+    <string name="sw_franc_sign" translatable="false">₣</string>
+</resources>

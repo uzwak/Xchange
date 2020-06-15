@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Xchange</string>
+    <string name="rate_download_positive">Курсы обмена обновлены</string>
+    <string name="current_rate">"Текущий курс 1 -> "</string>
+    <string name="choose">Выберите валюту</string>
+    <string name="dollar_to_native">68.62</string>
+    <string name="can_dollar_full">Канадский доллар</string>
+    <string name="ir_rial_full">Иранский риал</string>
+    <string name="pound_full" translatable="false">Британский фунт
+        стерлингов</string>
+    <string name="shekel_full">Новый Израильский шекель</string>
+    <string name="euro_full">Евро</string>
+    <string name="ruble_full">Российский рубль</string>
+    <string name="dollar_full">Доллар США</string>
+    <string name="sw_franc_full">Швейцарский франк</string>
+    <string name="choose_in">" из которой"</string>
+    <string name="choose_out">" в которую"</string>
+    <string name="native_sign">₽</string>
+    <string name="native_code">RUR</string>
+    <string name="CurrencyError">Ошибка валюты. Попробуйте, пожалуйста, снова</string>
+    <string name="loc_msg_choose">следует конвертировать</string>
+    <string name="converted">Конвертированный результат</string>
+</resources>

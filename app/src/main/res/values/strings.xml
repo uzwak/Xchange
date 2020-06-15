@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Xchange</string>
+
+    <string name="rate_download_positive">Exchange rates up-to-date</string>
+
+    <string name="current_rate">Current rate is 1 -> </string>
+    <string name="dollar_to_native"> 1.00</string>
+
+    <string name="choose">Choose currency to convert</string>
+
+    <string name="title_activity_scrolling" translatable="false">ScrollingActivity</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="choose_in">" from"</string>
+    <string name="choose_out">" to"</string>
+    <string name="loc_msg_choose">" "</string>
+
+    <string name="converted">Converted result</string>
+
+    <string name="icon_attribution" translatable="false">Flag icons made by Freepik from flaticon.com</string>
+
+    <string name="CurrencyError">Unidentified currency, please try again</string>
+
+</resources>
